@@ -1,0 +1,99 @@
+body{
+    background-color: #494949;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    background-color: #17253f;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: #000 4px solid;
+}
+
+.display{
+    background-color: #000000;
+    border-radius: 20px;
+    width: 370px;
+    height: 200px;
+    color: #fff;
+}
+
+.keypad div{
+    display: flex;
+    flex-direction: row;
+    width: 370px;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+
+.keypad div div{
+    cursor: pointer;
+    background-color: #424242;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    border: #000 3px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.keypad div div.ac{
+    background-color: #c73535;
+    font-weight: bold;
+}
+
+.keypad div div.equal{
+    background-color: #df691a;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.keypad div.operators div{
+    font-size: 25px;
+    color: #000000;
+    background-color: #df691a;
+}
+
+.keypad div div::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    box-shadow: -10px -10px 10px #fff, 5px 10px 5px #000000;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    box-shadow: -10px -10px 10px #777777, 5px 10px 5px #000;
+
+}
+
+.keypad div div:active::before{
+    box-shadow: none ;
+}
