@@ -28,6 +28,22 @@ body{
     width: 370px;
     height: 200px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    padding: 0px 20px;
+}
+
+#formula{
+    font-size: 25px;
+    font-weight: bold;
+    color: #e98c13;
+}
+
+#preview{
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .keypad div{

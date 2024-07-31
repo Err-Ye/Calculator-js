@@ -10,33 +10,40 @@
   <body>
     <div class="container">
       <!-- calculator body -->
-      <div class="display"></div>
+      <div class="display">
+        <div id="formula">
+          Formula
+        </div>
+        <div id="preview">
+          Preview
+        </div>
+      </div>
       <div class="keypad">
         <div class="operators">
-          <div>+</div>
-          <div>-</div>
-          <div>*</div>
-          <div>%</div>
+          <div id="+" onclick="addingOperator(this)">+</div>
+          <div id="-" onclick="addingOperator(this)">-</div>
+          <div id="*" onclick="addingOperator(this)">*</div>
+          <div id="%" onclick="addingOperator(this)">%</div>
         </div>
         <div>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
+          <div id="1" onclick="addingNum(this)">1</div>
+          <div id="2" onclick="addingNum(this)">2</div>
+          <div id="3" onclick="addingNum(this)">3</div>
         </div>
         <div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
+          <div id="4" onclick="addingNum(this)">4</div>
+          <div id="5" onclick="addingNum(this)">5</div>
+          <div id="6" onclick="addingNum(this)">6</div>
         </div>
         <div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
+          <div id="7" onclick="addingNum(this)">7</div>
+          <div id="8" onclick="addingNum(this)">8</div>
+          <div id="9" onclick="addingNum(this)">9</div>
         </div>
         <div>
           <div class="ac">AC</div>
           <div class="equal">=</div>
-          <div>0</div>
+          <div id="0" onclick="addingNum(this)">0</div>
         </div>
       </div>
     </div>
